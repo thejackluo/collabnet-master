@@ -6,6 +6,7 @@ import RowProjectCard from "./RowProjectCard";
 import CreateProjectForm from "./CreateProjectForm";
 import Filter from "./Filter";
 import SideBar from "./SideBar"; // To Do: change the github page link to a link you want
+import UserProfile from "./UserProfile";
 
 class App extends Component {
   constructor(props) {
@@ -53,6 +54,7 @@ class App extends Component {
           <CreateProjectForm handleSubmit={this.handleSubmit} />
           <RowProjectCard projectData={projects} />
           <Filter />
+          <UserProfile />
         </div>
       </div>
     );

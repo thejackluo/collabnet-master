@@ -17,7 +17,7 @@ import "../../css/frameworks/normalize.css";
 //     - https://picsum.photos/width/height
 //     - Be sure to change the width and height
 
-class UserProflie extends Component {
+class UserProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -35,7 +35,7 @@ class UserProflie extends Component {
 
   render() {
     return (
-      <div className="UserProflie">
+      <div className="UserProfile">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#">
             Idea-Connect
@@ -92,7 +92,7 @@ class UserProflie extends Component {
           </div>
         </nav>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img class="card-img-top" src="..." alt="Card image cap" />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -110,4 +110,4 @@ class UserProflie extends Component {
   }
 }
 
-export default UserProflie;
+export default UserProfile;
