@@ -34,11 +34,7 @@ class Filter extends Component {
   }
 
   render() {
-    return (
-      <div className="Filter">
-        <h1>Example</h1>
-      </div>
-    );
+    return <div className="Filter"></div>;
   }
 }
 

@@ -23,7 +23,13 @@ import ProjectPopup from "./ProjectPopup";
 class ProjectCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: this.props.projectCardData.name,
+      description: this.props.projectCardData.description,
+      projectPopupData: {
+        data: "Hello World",
+      },
+    };
     // any method using this keyword must bind
     // example: this.method = this.method.bind(this)
   }
@@ -43,11 +49,10 @@ class ProjectCard extends Component {
       <div className="ProjectCard">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Idea Name</h5>
-            <p className="card-text">
-              This is something i want to work if you like it let's code!
-            </p>
-            <ProjectPopup />
+            <h5 className="card-title">{this.state.name}</h5>
+            <p className="card-text">{this.state.description}</p>
+            <ProjectPopup projectData={this.state.projectPopupData} />
+            <button className="btn btn-primary">Delete</button>
           </div>
         </div>
       </div>
@@ -56,3 +61,16 @@ class ProjectCard extends Component {
 }
 
 export default ProjectCard;
+
+/*
+
+getBadgeClasses() {
+    let classes = "badge mx-4";
+    if (this.state.count === 0) {
+      classes += " badge-warning";
+    } else {
+      classes += " badge-primary";
+    }
+    return classes;
+  }
+  */

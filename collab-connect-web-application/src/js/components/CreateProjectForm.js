@@ -17,15 +17,15 @@ import "../../css/frameworks/normalize.css";
 //     - https://picsum.photos/width/height
 //     - Be sure to change the width and height
 
-class Example extends Component {
+class CreatePodForm extends Component {
+  initialState = {
+    name: "",
+    description: "",
+  };
+
   constructor(props) {
     super(props);
-    this.state = {
-      name: "",
-      description: "",
-    };
-    this.handleChangeName = this.handleChangeName.bind(this);
-    this.handleChangeDescription = this.handleChangeDescription.bind(this);
+    this.state = this.initialState;
     // any method using this keyword must bind
     // example: this.method = this.method.bind(this)
   }
@@ -38,58 +38,63 @@ class Example extends Component {
     // Things to do when the component is removed
   }
 
-  handleChangeName = (event) => {
+  handleChange = (event) => {
+    const { name, value } = event.target;
+
     this.setState({
-      name: event.target.value,
-      description: this.state.description,
+      [name]: value,
     });
   };
 
-  handleChangeDescription = (event) => {
-    this.setState({ name: this.state.name, description: event.target.value });
+  submitForm = () => {
+    this.props.handleSubmit(this.state);
+    this.setState(this.initialState);
   };
-
-  ha;
 
   render() {
     return (
-      <div className="Example">
+      <div className="CreatePodForm">
         <h3>Name: {this.state.name}</h3>
         <h3>Description: {this.state.description}</h3>
         <form className="form my-4">
           <div class="form-group">
-            <label for="pname">Project Name:</label>
+            <label for="name">Project Name:</label>
             <input
               type="text"
               class="form-control"
               placeholder="Enter Project Name"
-              name="pname"
-              onChange={this.handleChangeName}
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
               required
             />
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill out this field.</div>
           </div>
           <div class="form-group">
-            <label for="pdescription">Project Description:</label>
+            <label for="description">Project Description:</label>
             <input
               type="text"
               class="form-control"
               placeholder="Enter Project Description"
-              name="pdescription"
-              onChange={this.handleChangeDescription}
+              name="description"
+              value={this.state.description}
+              onChange={this.handleChange}
               required
             />
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill out this field.</div>
           </div>
-          <button type="submit" class="btn btn-primary">
-            Submit
-          </button>
+          <input
+            type="button"
+            value="submit"
+            class="btn btn-primary"
+            onClick={this.submitForm}
+          />
         </form>
       </div>
     );
   }
 }
 
-export default Example;
+export default CreatePodForm;
