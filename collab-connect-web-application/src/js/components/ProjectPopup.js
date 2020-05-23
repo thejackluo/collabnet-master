@@ -38,41 +38,39 @@ class ProjectPopup extends Component {
 
     return (
       <div className="ProjectPopup">
-        <div className="container">
-          <button
-            type="button"
-            className="btn btn-primary"
-            dataToggle="modal"
-            dataTarget="#myModal"
-          >
-            Click on this
-          </button>
-          <div className="modal fade" id="myModal">
-            <div className="modal-dialog modal-lg">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h4 className="modal-title">Idea Name</h4>
-                  <button type="button" className="close" dataDismiss="modal">
-                    &times;
-                  </button>
-                </div>
-                <div className="modal-body">Modal body..</div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary btn-danger"
-                    dataDismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary btn-Primary"
-                    dataDismiss="modal"
-                  >
-                    Join the slack Now
-                  </button>
-                </div>
+        <button
+          type="button"
+          className="btn btn-primary"
+          dataToggle="modal"
+          dataTarget="#myModal"
+        >
+          Click on this
+        </button>
+        <div className="modal fade" id="myModal">
+          <div className="modal-dialog modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">Idea Name</h4>
+                <button type="button" className="close" dataDismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div className="modal-body">Modal body..</div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-danger"
+                  dataDismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-Primary"
+                  dataDismiss="modal"
+                >
+                  Join the slack Now
+                </button>
               </div>
             </div>
           </div>

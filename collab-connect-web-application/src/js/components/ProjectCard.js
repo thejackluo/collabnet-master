@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../css/frameworks/normalize.css";
+import ProjectPopup from "./ProjectPopup";
 
 // Things to consider
 
@@ -46,13 +47,7 @@ class ProjectCard extends Component {
             <p className="card-text">
               This is something i want to work if you like it let's code!
             </p>
-            <button
-              href="#"
-              className="btn btn-primary"
-              onClick={this.handlePopup()}
-            >
-              Full Description
-            </button>
+            <ProjectPopup />
           </div>
         </div>
       </div>

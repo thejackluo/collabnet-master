@@ -17,7 +17,7 @@ import "../../css/frameworks/normalize.css";
 //     - https://picsum.photos/width/height
 //     - Be sure to change the width and height
 
-class Filiter extends Component {
+class Filter extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -35,11 +35,11 @@ class Filiter extends Component {
 
   render() {
     return (
-      <div className="Filiter">
+      <div className="Filter">
         <h1>Example</h1>
       </div>
     );
   }
 }
 
-export default Filiter;
+export default Filter;
