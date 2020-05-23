@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <div className="container-fluid">
           <header className="App-header">
-            <h1>Hello World</h1>
+            <h1>Hello Everyone</h1>
             <button className="btn btn-primary">Click here</button>
           </header>
           <Example />
