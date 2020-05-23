@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../css/frameworks/normalize.css";
+import ProjectCard from "./ProjectCard";
 
 // Things to consider
 
@@ -17,9 +18,7 @@ import "../../css/frameworks/normalize.css";
 //     - https://picsum.photos/width/height
 //     - Be sure to change the width and height
 
-//<img src="..." className="card-img-top" alt="..."></img>
-
-class ProjectCard extends Component {
+class RowProjectCard extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -35,24 +34,18 @@ class ProjectCard extends Component {
     // Things to do when the component is removed
   }
 
-  handlePopup() {}
-
   render() {
     return (
-      <div className="ProjectCard">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">Idea Name</h5>
-            <p className="card-text">
-              This is something i want to work if you like it let's code!
-            </p>
-            <button
-              href="#"
-              className="btn btn-primary"
-              onClick={this.handlePopup()}
-            >
-              Full Description
-            </button>
+      <div className="RowProjectCard">
+        <div className="row">
+          <div className="col-sm mx-2">
+            <ProjectCard />
+          </div>
+          <div className="col-sm mx-2">
+            <ProjectCard />
+          </div>
+          <div className="col-sm mx-2">
+            <ProjectCard />
           </div>
         </div>
       </div>
@@ -60,4 +53,4 @@ class ProjectCard extends Component {
   }
 }
 
-export default ProjectCard;
+export default RowProjectCard;
