@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/collab-connect/static/css/main.83347f0d.chunk.css",
+    "main.js": "/collab-connect/static/js/main.c4ae5248.chunk.js",
+    "main.js.map": "/collab-connect/static/js/main.c4ae5248.chunk.js.map",
+    "runtime-main.js": "/collab-connect/static/js/runtime-main.511d50f3.js",
+    "runtime-main.js.map": "/collab-connect/static/js/runtime-main.511d50f3.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/collab-connect/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.42133a0e.chunk.js": "/collab-connect/static/js/2.42133a0e.chunk.js",
+    "static/js/2.42133a0e.chunk.js.map": "/collab-connect/static/js/2.42133a0e.chunk.js.map",
+    "index.html": "/collab-connect/index.html",
+    "precache-manifest.36625cfb909fa6fb6e8fe4e557192d89.js": "/collab-connect/precache-manifest.36625cfb909fa6fb6e8fe4e557192d89.js",
+    "service-worker.js": "/collab-connect/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/collab-connect/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.83347f0d.chunk.css.map": "/collab-connect/static/css/main.83347f0d.chunk.css.map",
+    "static/js/2.42133a0e.chunk.js.LICENSE.txt": "/collab-connect/static/js/2.42133a0e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.511d50f3.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.42133a0e.chunk.js",
+    "static/css/main.83347f0d.chunk.css",
+    "static/js/main.c4ae5248.chunk.js"
+  ]
+}
