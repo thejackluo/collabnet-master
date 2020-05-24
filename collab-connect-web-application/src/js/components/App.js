@@ -7,6 +7,15 @@ import CreateProjectForm from "./CreateProjectForm";
 import Filter from "./Filter";
 import SideBar from "./SideBar"; // To Do: change the github page link to a link you want
 import UserProfile from "./UserProfile";
+import * as firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyAu7m_yOxsLapML0gabBU-tEIEF3xFqU0k",
+  authDomain: "collab-connect.firebaseapp.com",
+  databaseURL: "https://collab-connect.firebaseio.com",
+  projectId: "collab-connect",
+  storageBucket: "collab-connect.appspot.com",
+};
 
 class App extends Component {
   constructor(props) {

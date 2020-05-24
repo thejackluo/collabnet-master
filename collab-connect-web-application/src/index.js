@@ -5,6 +5,17 @@ import "./css/frameworks/normalize.css";
 import "./css/webpages/index.css";
 import App from "./js/components/App";
 import * as serviceWorker from "./js/other/serviceWorker";
+import * as firebase from "firebase";
+
+var config = {
+  apiKey: "AIzaSyAu7m_yOxsLapML0gabBU-tEIEF3xFqU0k",
+  authDomain: "collab-connect.firebaseapp.com",
+  databaseURL: "https://collab-connect.firebaseio.com",
+  projectId: "collab-connect",
+  storageBucket: "collab-connect.appspot.com",
+};
+
+firebase.initializeApp(config);
 
 ReactDOM.render(
   <React.StrictMode>
