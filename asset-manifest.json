@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/collab-connect/static/css/main.8707a55c.chunk.css",
-    "main.js": "/collab-connect/static/js/main.b87277e5.chunk.js",
-    "main.js.map": "/collab-connect/static/js/main.b87277e5.chunk.js.map",
+    "main.css": "/collab-connect/static/css/main.085f8a87.chunk.css",
+    "main.js": "/collab-connect/static/js/main.0e74caf5.chunk.js",
+    "main.js.map": "/collab-connect/static/js/main.0e74caf5.chunk.js.map",
     "runtime-main.js": "/collab-connect/static/js/runtime-main.511d50f3.js",
     "runtime-main.js.map": "/collab-connect/static/js/runtime-main.511d50f3.js.map",
     "static/css/2.af3c1da9.chunk.css": "/collab-connect/static/css/2.af3c1da9.chunk.css",
     "static/js/2.748658d3.chunk.js": "/collab-connect/static/js/2.748658d3.chunk.js",
     "static/js/2.748658d3.chunk.js.map": "/collab-connect/static/js/2.748658d3.chunk.js.map",
     "index.html": "/collab-connect/index.html",
-    "precache-manifest.99b303d52d15af0c9f3d6fae38ceb0f4.js": "/collab-connect/precache-manifest.99b303d52d15af0c9f3d6fae38ceb0f4.js",
+    "precache-manifest.16d3a8e1a1d14cd6cbf7b39758148541.js": "/collab-connect/precache-manifest.16d3a8e1a1d14cd6cbf7b39758148541.js",
     "service-worker.js": "/collab-connect/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/collab-connect/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.8707a55c.chunk.css.map": "/collab-connect/static/css/main.8707a55c.chunk.css.map",
+    "static/css/main.085f8a87.chunk.css.map": "/collab-connect/static/css/main.085f8a87.chunk.css.map",
     "static/js/2.748658d3.chunk.js.LICENSE.txt": "/collab-connect/static/js/2.748658d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.511d50f3.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.748658d3.chunk.js",
-    "static/css/main.8707a55c.chunk.css",
-    "static/js/main.b87277e5.chunk.js"
+    "static/css/main.085f8a87.chunk.css",
+    "static/js/main.0e74caf5.chunk.js"
   ]
 }

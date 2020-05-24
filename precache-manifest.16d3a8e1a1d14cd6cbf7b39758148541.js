@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a88b47a78f06c019a99df8af1b717785",
+    "revision": "4b3b9819f0d040caa51ba74901f4424f",
     "url": "/collab-connect/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/collab-connect/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "f9c9ffaaed569e4db5b1",
-    "url": "/collab-connect/static/css/main.8707a55c.chunk.css"
+    "revision": "0f5e238e5a51629e47ff",
+    "url": "/collab-connect/static/css/main.085f8a87.chunk.css"
   },
   {
     "revision": "4efdba651fef205dc7f7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/collab-connect/static/js/2.748658d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9c9ffaaed569e4db5b1",
-    "url": "/collab-connect/static/js/main.b87277e5.chunk.js"
+    "revision": "0f5e238e5a51629e47ff",
+    "url": "/collab-connect/static/js/main.0e74caf5.chunk.js"
   },
   {
     "revision": "d3802558c1bc63982c09",
