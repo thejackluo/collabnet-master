@@ -15,7 +15,20 @@ var config = {
   storageBucket: "collab-connect.appspot.com",
 };
 
-firebase.initializeApp(config);
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyCGxO1ZcPpq7YE8YTNbbYYAwtwqsXWYstM",
+  authDomain: "collab-connect-b6358.firebaseapp.com",
+  databaseURL: "https://collab-connect-b6358.firebaseio.com",
+  projectId: "collab-connect-b6358",
+  storageBucket: "collab-connect-b6358.appspot.com",
+  messagingSenderId: "793236351163",
+  appId: "1:793236351163:web:e40f09a799d781a253a19e",
+  measurementId: "G-ZR04XQ31R9",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 ReactDOM.render(
   <React.StrictMode>

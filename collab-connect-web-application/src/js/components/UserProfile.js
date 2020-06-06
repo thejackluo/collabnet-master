@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../css/frameworks/normalize.css";
+import "../../css/components/UserProfile.css";
 
 // Things to consider
 
@@ -36,74 +37,179 @@ class UserProfile extends Component {
   render() {
     return (
       <div className="UserProfile">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            Idea-Connect
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Idea
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  DashBoard
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search Idea
-              </button>
-            </form>
-          </div>
-        </nav>
-
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">
-              Go somewhere
+        <div className="navbarProfile">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="#">
+              Navbar
             </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item active">
+                  <a className="nav-link" href="#">
+                    Home <span className="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Idea
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Profile
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div className="jumbotron">
+          <h1 className="display-4">Welcome Coder</h1>
+          <img
+            src="profile.png"
+            className="rounded-circle align-center"
+            alt="Cinque Terre"
+          />
+          <p className="lead">
+            I am intrested to work on technical projects like Machine Learning,
+            AI and Web development. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Minus expedita id, assumenda nostrum voluptates
+            ut, consequuntur quia repellat magni quasi reprehenderit iste cum.
+            Omnis velit blanditiis possimus mollitia reprehenderit magni?
+          </p>
+          <hr className="my-4" />
+          <p>
+            It uses utility classNamees for typography and spacing to space
+            content out within the larger container.
+          </p>
+
+          <div className="projects my-4">
+            <h3 className="">DASHBOARD</h3>
+            <div className="row">
+              <div className="col-sm-4">
+                <div className="card ">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 1</h5>
+                    <p className="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
+                    <div className="progress my-2 ">
+                      <div
+                        className="progress-bar progress_style"
+                        role="progressbar"
+                        aria-valuenow="72"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        72%
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-dark">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="card ">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 2</h5>
+                    <p className="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
+
+                    <div className="progress my-2 progress_style">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="12"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        12%
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-dark">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Project 3</h5>
+                    <p className="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
+                    <div className="progress my-2 progress_style">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="32"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        32%
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-dark ">
+                      Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <h3>Technical Interest</h3>
+          <p>
+            <span className="badge badge-primary">GitHub</span>
+            <span className="badge badge-secondary">Machine Learning</span>
+            <span className="badge badge-success">React</span>
+            <span className="badge badge-danger">firebase</span>
+            <span className="badge badge-warning">Google Cloud</span>
+          </p>
+
+          <p>
+            It uses utility classNamees for typography and spacing to space
+            content out within the larger container.
+          </p>
+          <a className="btn btn-dark btn-lg" href="#" role="button">
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a className="btn btn-primary btn-lg" href="#" role="button">
+            <i className="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <a className="btn btn-danger btn-lg" href="#" role="button">
+            <i className="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+          <a className="btn btn-primary btn-lg" href="#" role="button">
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     );
